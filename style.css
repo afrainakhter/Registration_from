@@ -1,0 +1,86 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+    
+    .header {
+        margin: 0;
+        padding: 0;
+        height: 100px;
+        background: #fff;
+    }
+    
+    h3 {
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-left: 30%;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    
+    body {
+        display: flex;
+        height: 100vh;
+        background: linear-gradient(135deg, rgb(245, 211, 211), rgb(238, 200, 200));
+        padding: 10px;
+    }
+    
+    img {
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    .container {
+        padding: 20px 25px;
+        border-radius: 5px;
+    }
+    
+    .input-feild {
+        padding: 10px;
+        margin: 5px;
+        width: 100%;
+        height: 40px;
+        border-color: black;
+    }
+    
+    form .button {
+        height: 35px;
+        margin: 45px 0;
+        transition: 0.4s;
+    }
+    
+    form .button input {
+        height: 90%;
+        width: 90%;
+        background: linear-gradient(135deg, rgb(247, 120, 120), rgb(226, 63, 63));
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: 18px;
+        border-radius: 5px;
+        border-color: white;
+        cursor: pointer;
+    }
+    
+    input[type=text],
+    input[type=email],
+    input[type=number],
+    input[type=date] {
+        width: 100%;
+        padding: 6px 12px;
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+    
+    input[type=checkbox] {
+        padding-left: 10px;
+        margin: 0 15px 0;
+    }
+    
+    form .button :hover {
+        width: 100%;
+        height: 100%;
+        background: rgb(230, 72, 24);
+    }
