@@ -50,7 +50,7 @@
     }
     
     .item {
-        justify-content: center;
+        margin-top: 70px;
         align-items: center;
     }
     
@@ -63,14 +63,13 @@
     }
     
     form .button {
-        height: 35px;
+        height: 45px;
         margin: 45px 0;
-        transition: 0.4s;
     }
     
     form .button input {
         height: 90%;
-        width: 90%;
+        width: 50%;
         background: linear-gradient(135deg, rgb(247, 120, 120), rgb(226, 63, 63));
         color: #fff;
         letter-spacing: 1px;
@@ -78,6 +77,8 @@
         border-radius: 5px;
         border-color: white;
         cursor: pointer;
+        margin-left: 20%;
+        transition: 1s;
     }
     
     input[type=text],
@@ -96,12 +97,12 @@
     }
     
     input[type=checkbox] {
-        padding-left: 10px;
-        margin: 0 15px 0;
+        padding-left: 20px;
+        margin: 0 25px 0;
     }
     
     form .button :hover {
-        width: 100%;
+        width: 60%;
         height: 100%;
         background: rgb(230, 72, 24);
     }
