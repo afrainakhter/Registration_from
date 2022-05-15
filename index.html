@@ -40,7 +40,7 @@
                 </div>
                 <div class="input-feild">
                     <label for="Mother Contact No">Mother's Contact No:</label>
-                    <input type="text" id="lname" name="Mother's Contact No" placeholder="Your Mother's Contact No.." />
+                    <input type="text" id="lname" name="Mother'sContact No" placeholder="Your Mother's Contact No.." />
                 </div>
                 <div class="input-feild">
                     <label for="Date">Date of Birth:</label>
@@ -69,16 +69,15 @@
                 </div>
                 <div class="input-feild">
                     <label for="Student Status">Student Status:</label>
-                    <input type="radio" id="lname" name="Student Status" value="School">School
-                    <input type="radio" id="lname" name="Student Status" value="College">College
-                    <input type="radio" id="lname" name="Student Status" value="University">University
-                    <input type="radio" id="lname" name="Student Status" value="Graduate">Graduate
-                    <input type="radio" id="lname" name="Student Status" value="Post-Graduate">Post-Graduate
-                    <input type="radio" id="lname" name="Student Status" value="Diploma">Diploma
+                    <input type="checkbox" id="lname" name="Student Status" value="School">School
+                    <input type="checkbox" id="lname" name="Student Status" value="College">College
+                    <input type="checkbox" id="lname" name="Student Status" value="Graduate">Graduate
+                    <input type="checkbox" id="lname" name="Student Status" value="Post-Graduate">Post-Graduate
+                    <input type="checkbox" id="lname" name="Student Status" value="Diploma">Diploma
                 </div>
                 <div class="input-feild">
-                    <label for="If Graduate"> For University Only:</label>
-                    <input type="text" id="lname" name="Dept & Semester" placeholder="Write down your dept and semester.." />
+                    <label for="If Graduate">If Graduate:</label>
+                    <input type="text" id="lname" name="Address" placeholder="Write Down your Dept and semester.." />
 
                 </div>
                 <div class="input-feild">
@@ -90,39 +89,36 @@
                 <div class="input-feild">
                     <label for="Member Status">Member status:</label>
 
-                    <input type="radio" id="lname" name="Member Status" value="Entry level" />Entry level
-                    <input type="radio" id="lname" name="Member Status" value="Advance" />Advance
-                    <input type="radio" id="lname" name="Member Status" value="Expert" />Expert
-                    <input type="radio" id="lname" name="Member Status" value="Star" />Star
+                    <input type="checkbox" id="lname" name="Member Status" value="Entry level" />Entry level
+                    <input type="checkbox" id="lname" name="Member Status" value="Advance" />Advance
+                    <input type="checkbox" id="lname" name="Member Status" value="Expert" />Expert
+                    <input type="checkbox" id="lname" name="Member Status" value="Star" />Star
                 </div>
                 <div class="input-feild">
                     <label for="know about it">How do you know about Ektukhani Robotics?</label>
 
-                    <input type="radio" id="lname" name="know about Ektukhani Robotics" value="Friends" />Friends
-                    <input type="radio" id=" lname " name="know about Ektukhani Robotics " value="Facebook" />Facebook
-                    <input type="radio" id="lname " name="know about Ektukhani Robotics " value="YouTube" />YouTube
+                    <input type="checkbox" id="lname" name="know about Ektukhani Robotics" value="Friends" />Friends
+                    <input type="checkbox" id="lname" name="know about Ektukhani Robotics" value="Facebook
+                    " />Facebook
+                    <input type="checkbox" id="lname" name="know about Ektukhani Robotics" value="YouTube" />YouTube
+                </div>
+                <div>
+                    <h2>If you and your parents/ Sister / Brother will admit as a group or couple so we've Bondhu package (with a moderate discount of 30%){We encourage students to learn with their parents or seniors or elder ones just to let you know that
+                        Robotics knows no bound. It's open for any age}</h2>
                 </div>
                 <div class="input-feild">
-                    <label for="Reference">Reference</label>
-                    <input type="text" id="lname" name="Reference" placeholder="Your ref (if any) or write N/A.." />
+                    <label for="Conformatoin">Are you willing to take this one??</label>
+
+                    <input type="checkbox" id="lname" name="Are you willing to take this one?" value="Friends" />Friends
+                    <input type="checkbox" id="lname" name="Are you willing to take this one?" value="Facebook
+                    " />Facebook
+                    <input type="checkbox" id="lname" name="know about Ektukhani Robotics" value="YouTube" />YouTube
                 </div>
 
-                <div class="input-feild">
-                    <h2>If you and your parents/ Sister / Brother will admit as a group or couple so we've Bondhu package (with a moderate discount of 30%)
-                        <br>
-                        <br>{We encourage students to learn with their parents or seniors or elder ones just to let you know that Robotics knows no bound. It 's open for any age}</h2>
-                </div>
 
-                <div class="input-feild ">
-                    <label for="Conformatoin ">Are you willing to take this one??</label>
 
-                    <input type="radio" id="lname " name="Are you willing to take this one? " value="Yes" />Yes
-                    <input type="radio" id="lname " name="Are you willing to take this one? " value="No" />No
-
-                </div>
-
-                <div class="button ">
-                    <input type="submit " value="Submit " name="Submit " />
+                <div class="button">
+                    <input type="submit" value="Submit" name="Submit" />
                 </div>
                 <div>
 
@@ -131,19 +127,19 @@
 
         <script>
             const scriptURL =
-                "https://script.google.com/macros/s/AKfycbzK5BeJaHWQ77XzJwlmVguXodA1w4kND-uJQtop7TuVZCnLXfU2vryRyaBaF9CZpBoHiw/exec ";
-            const form = document.forms["google-sheet "];
+                "https://script.google.com/macros/s/AKfycbzK5BeJaHWQ77XzJwlmVguXodA1w4kND-uJQtop7TuVZCnLXfU2vryRyaBaF9CZpBoHiw/exec";
+            const form = document.forms["google-sheet"];
 
-            form.addEventListener("submit ", (e) => {
+            form.addEventListener("submit", (e) => {
                 e.preventDefault();
                 fetch(scriptURL, {
-                        method: "POST ",
+                        method: "POST",
                         body: new FormData(form),
                     })
                     .then((response) =>
-                        alert("Thanks for Contacting us..! We Will Contact You Soon... ")
+                        alert("Thanks for Contacting us..! We Will Contact You Soon...")
                     )
-                    .catch((error) => console.error("Error! ", error.message));
+                    .catch((error) => console.error("Error!", error.message));
             });
         </script>
 </body>
